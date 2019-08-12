@@ -7,7 +7,7 @@ server's current directory. If the file does not exist, a message with be sent t
 
 ftclient, is written in python and does not need to be compiled. Once running, ftclient will accept the -l and -g commands and 
 send to the server input at the command line. -l returns the server contents and is displayed on client. -g returns the specific file to 
-client, and the file will be written to the client current directory.
+client, and the file will be written to the client current directory, overwriting any existing file with the same name.
 
 ## Launch
 
