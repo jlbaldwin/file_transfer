@@ -13,22 +13,22 @@ client, and the file will be written to the client current directory.
 
 This was tested in the bash shell running on windows, with python 2.7.15
 
-To compile ftserver.c 
+To compile ftserver.c:  
 $ gcc -o ftserver ftserver.c
 
-To run program
-Start ftserver after it has been compiled. From command line:
-$ ftserver <portNum> 
-<portNum> is the port the server will be listening on
+To run program:  
+Start ftserver after it has been compiled. From command line:  
+$ ftserver <portNum>   
+<portNum> is the port the server will be listening on  
 
-Start ftclient after ftserver is running. 		
-$python ftclient.py <server IP> <server Port> <-l -g flag> <filename, if -g> <client port>
+Start ftclient after ftserver is running:  	
+$python ftclient.py <server IP> <server Port> <-l -g flag> <filename, if -g> <client port>  
 
-Example to request directory contents from server running on localhost:12001: 
-$ python ftclient.py localhost 12001 -l 12002 
+Example to request directory contents from server running on localhost:12001:  
+$ python ftclient.py localhost 12001 -l 12002  
 
-Example to request file from server running on localhost:12001:
-$ python ftclient.py localhost 12001 -g file.txt 12002	   	   				   	
+Example to request file from server running on localhost:12001:  
+$ python ftclient.py localhost 12001 -g file.txt 12002    	   				   	
 
 ftclient closes after each request per specs. ftserver remians open until it is terminated at the terminal (with ctrl-c, for example)
 
