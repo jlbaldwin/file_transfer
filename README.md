@@ -18,10 +18,10 @@ $ gcc -o ftserver ftserver.c
 
 To run program:  
 Start ftserver after it has been compiled. From command line:  
-$ ftserver <portNum>   
-<portNum> is the port the server will be listening on  
+$ ftserver `<portNum>`   
+`<portNum>` is the port the server will be listening on  
 
-Start ftclient after ftserver is running:  	
+Start ftclient after ftserver is running:  
 $python ftclient.py <server IP> <server Port> <-l -g flag> <filename, if -g> <client port>  
 
 Example to request directory contents from server running on localhost:12001:  
