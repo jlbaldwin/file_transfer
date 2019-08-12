@@ -3,10 +3,10 @@
 This project consists of two programs: ftserver and ftclient. ftserver is written in c and requires compilation. The server program will 
 remain active and listening until it is terminated from the terminal (with ctrl-c, for example). The server accepts two request flags: -l and -g.
 -l returns a current directory listing of the server. -g has an additional argument for a filename, and will transfer the file if it exists in the 
-server's current directory. If the file does not exist, a message with be sent to the client. 
+server's current directory. If the file does not exist, a message will be sent to the client. 
 
 ftclient, is written in python and does not need to be compiled. Once running, ftclient will accept the -l and -g commands and 
-send to the server input at the command line. -l returns the server contents and is displayed on client. -g returns the specific file to 
+send to the server. -l returns the server contents and is displayed on client. -g returns the specific file to 
 client, and the file will be written to the client current directory, overwriting any existing file with the same name.
 
 ## Launch
