@@ -22,7 +22,7 @@ $ ftserver `<portNum>`
 `<portNum>` is the port the server will be listening on  
 
 Start ftclient after ftserver is running:  
-$python ftclient.py <server IP> <server Port> <-l -g flag> <filename, if -g> <client port>  
+$python ftclient.py `<server IP>` `<server Port>` <-l -g flag> <filename, if -g> `<client port>`  
 
 Example to request directory contents from server running on localhost:12001:  
 $ python ftclient.py localhost 12001 -l 12002  
